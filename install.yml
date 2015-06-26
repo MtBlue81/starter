@@ -4,16 +4,65 @@
   roles:
   - role: osxc.packages
     brew_taps:
+    - caskroom/cask
+    - homebrew/dupes
+    - homebrew/binary
     - caskroom/fonts
+    - caskroom/versions
     brew_packages:
+    - openssl
+    - wget
+    - curl
     - git
     - zsh
     - vim
-    - the_silver_searcher
-    - ctags
+    - nodebrew
+    - tree
+    #- the_silver_searcher
+    #- ctags
     - reattach-to-user-namespace
     - tmux
+    - curl
+    - docker
+    - go
+    - tree
+    - nkf
+    - jq
+    - colordiff
+    - direnv
+    - hub
+    - peco
+    - mysql
+    - redis
+    - phantomjs
+    - autojump
+    - gibo
+    - source-highlight
     cask_packages:
-    - font-inconsolata-for-powerline
-    - iterm2
-    - macvim
+    #- font-inconsolata-for-powerline
+    #- iterm2
+    #- macvim
+    - firefox
+    - google-chrome
+    - adobe-reader
+    - java
+    - skype
+    - slack
+    - dash
+    - skitch
+    - webstorm
+    - vagrant
+    - virtualbox
+    - clamxav
+    - bettertouchtool
+    - charles
+    - dropbox
+    - google-japanese-ime
+    - evernote
+    - libreoffice
+    - clipmenu
+    - itsycal
+    - remote-desktop-connection
+    - sequel-pro
+    - thunderbird
+
