@@ -70,7 +70,7 @@
     command: defaults write {{ item }}
     with_items:
       - com.apple.screencapture name "screenshot"
-      - com.apple.screencapture location ~/Dropbox/Private/screenshots
+      - com.apple.screencapture location ~/Dropbox/picture/screenshots
   - name: 'Dock: Autohide'
     command: defaults write com.apple.dock autohide -bool true
   - name: 'Dock: Mineffect'
@@ -95,8 +95,12 @@
       - com.apple.dock wvous-tr-modifier -int 0
       - com.apple.dock wvous-bl-corner -int 2
       - com.apple.dock wvous-bl-modifier -int 0
-      - com.apple.dock wvous-br-corner -int 10
+      - com.apple.dock wvous-br-corner -int 11
       - com.apple.dock wvous-br-modifier -int 0
 
-    - name: 'need password to unlock screensaver'
-      command: defaults write com.apple.screensaver askForPasswordDelay -integer 21600
+  - name: 'need password to unlock screensaver'
+    command: defaults write com.apple.screensaver askForPasswordDelay -integer 21600
+  - name: install neobundle
+    git: repo='https://github.com/Shougo/neobundle.vim' dest=~/.vim/bundle/neobundle.vim
+  - name: install vimproc
+    git: repo='https://github.com/Shougo/vimproc.vim' dest=~/.vim/bundle/vimproc

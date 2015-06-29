@@ -1,22 +1,23 @@
 ---
 # Your run is described here
-- task:
-    - name: make local sbin directory
-      sudo: yes
-      file:
-        path: /usr/local/sbin
-        state: directory
-        mode: 0755
+- hosts: all
+  tasks:
+  - name: make local sbin directory
+    sudo: yes
+    file:
+      path: /usr/local/sbin
+      state: directory
+      mode: 0755
 
-    - name: mod env path
-      sudo: yes
-      lineinfile: 
-        dest: /etc/paths
-        backup: yes
-        regexp: "/usr/loca/sbin"
-        line: "/usr/local/sbin"
-        insertbefore: "/usr/sbin"
+  - name: mod env path
+    sudo: yes
+    lineinfile: 
+      dest: /etc/paths
+      backup: yes
+      regexp: "/usr/loca/sbin"
+      line: "/usr/local/sbin"
+      insertbefore: "/usr/sbin"
 
 - include: install.yml
-- include: osconfig.yml
+- include: osxconfig.yml
 - include: configuration.yml

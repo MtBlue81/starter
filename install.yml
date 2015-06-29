@@ -62,7 +62,7 @@
     - libreoffice
     - clipmenu
     - itsycal
-    - remote-desktop-connection
+    #- remote-desktop-connection
     - sequel-pro
     - thunderbird
 
