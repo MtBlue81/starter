@@ -121,6 +121,14 @@ let g:ctrlp_cmd = 'CtrlP'
 NeoBundle 'vim-scripts/matchit.zip'
 
 " ------------------------------------------------------------------------------
+"  検索
+" ------------------------------------------------------------------------------
+NeoBundle 'haya14busa/incsearch.vim'
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
+" ------------------------------------------------------------------------------
 "  フォーマット拡張
 " ------------------------------------------------------------------------------
 NeoBundle 'maksimr/vim-jsbeautify'
@@ -160,6 +168,10 @@ NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
 
 let g:vim_markdown_folding_disabled=1
+
+" JSONファイルのクォーテーション
+NeoBundle 'elzr/vim-json'
+let g:vim_json_syntax_conceal = 0
 
 call neobundle#end()
 
