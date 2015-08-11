@@ -65,4 +65,7 @@
     #- remote-desktop-connection
     - sequel-pro
     - thunderbird
+    - xtrafinder
+    - boot2docker
+    - boot2docker-status
 
